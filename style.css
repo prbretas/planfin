@@ -1,0 +1,84 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  width: 90vw;
+  border-radius: 10px;
+  border: none;
+}
+#divValEnt {
+  background-color: #b0ca9e;
+  padding: 20px 10px;
+}
+
+#divValDesc {
+  background-color: #ca9e9e;
+  padding: 20px 10px;
+}
+
+#divValInvest {
+  background-color: #808ed2;
+  padding: 20px 10px;
+}
+
+#divGastosMensais {
+  background-color: #c7b281;
+  padding: 20px 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: #fff;
+  filter: drop-shadow(0 0 2px black);
+}
+label {
+  display: block;
+  margin-top: 10px;
+}
+input[type="text"],
+input[type="number"] {
+  width: 230px;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+   text-align: right;
+
+}
+
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.addNewField{
+border: none;
+border-radius: 10px;
+width: 35px;
+height: 35px;
+
+}

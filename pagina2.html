@@ -1,23 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PAGINA 2</title>
-</head>
-<body>
-
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header>
-        <p>ESTE É O CABEÇALHO</p>
-        <ul>
-          <a href="./index.html"> <li>Home</li></a>
-          <a href="./pagina2.html"> <li>Page 2</li></a>
-        </ul>
-      </header>
+      <nav>
+        <img src="" alt="" />
+        <a href="./index.html"> Home</a>
+        <a href="./pagina2.html">Planilha</a>
+      </nav>
+    </header>
+    <h1>Planilha Financeira Mensal</h1>
 
+    <form action="/submit" method="POST">
+      <!-- Entradas de Dinheiro -->
+      <fieldset id="divValEnt">
+        <legend>Entradas de Dinheiro</legend>
+        <input type="text" id="inpEntText" name="inpEntText" />
+        <input type="number" id="inpEntValue" name="inpEntValue" step="0.01" />
+        <button class="addNewField" onclick="addNewField()">+</button>
+      </fieldset>
 
-    <h1>PAGINA 2</h1>
-    <a href="./index.html">PAGINA PRINCIPAL - HOME</a>
-    
-</body>
+      <!-- Descontos do Salário Principal -->
+      <fieldset id="divValDesc">
+        <legend>Descontos do Salário Principal</legend>
+        <input type="text" id="inpDescText" name="inpDescText" />
+        <input
+          type="number"
+          id="inpDescValue"
+          name="inpDescValue"
+          step="0.01"
+        />
+        <button class="addNewField" onclick="addNewField()">+</button>
+      </fieldset>
+
+      <!-- Valores Investidos -->
+      <fieldset id="divValInvest">
+        <legend>Valores Investidos</legend>
+        <input type="text" id="inpInvestText" name="inpInvestText" />
+        <input
+          type="number"
+          id="inpInvestValue"
+          name="inpInvestValue"
+          step="0.01"
+        />
+        <button class="addNewField" onclick="addNewField()">+</button>
+      </fieldset>
+
+      <!-- Gastos Mensais -->
+      <fieldset id="divGastosMensais">
+        <legend>Gastos Mensais</legend>
+        <input type="text" id="inpInvestText" name="inpInvestText" />
+        <input
+          type="number"
+          id="inpInvestValue"
+          name="inpInvestValue"
+          step="0.01"
+        />
+        <button class="addNewField" onclick="addNewField()">+</button>
+      </fieldset>
+
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <h1>R$--,--</h1>
+  </body>
 </html>
